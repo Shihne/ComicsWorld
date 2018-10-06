@@ -1,0 +1,168 @@
+header {
+	background: rgba(0, 0, 0, 1);
+	height: 120px;
+	width: 100%;
+	margin: auto;
+	margin-left: -8px;
+	margin-top: -8px;
+	padding-right: 10px;
+	z-index: 1;
+}
+
+#logo {
+	padding-left: 10px;
+	float: left;
+}
+
+#logo a {
+	font-size: 50px;
+}
+.logo {
+	display: block;
+}
+
+.color {
+	animation: color 4s infinite alternate;
+}
+
+@keyframes color {
+	0% {color: #2e2f92;}
+	25% {color: #38afaa;}
+	50% {color: #5b59a7;}
+	75% {color: #f7b21c;}
+	100% {color: #e12527;}
+}
+
+.nav-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-top: 80px;
+	cursor: pointer;
+}
+
+.nav-toggle span {
+	display: block;
+	position: absolute;
+	top: 19px;
+	left: 8px;
+	right: 8px;
+	height: 2px;
+	animation: bgcolor 4s infinite alternate;
+}
+
+.nav-toggle span:before, .nav-toggle span:after {
+	content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	animation: bgcolor 4s infinite alternate;
+}
+
+.nav-toggle span:before {
+	top: -10px;
+}
+.nav-toggle span:after {
+	bottom: -10px;
+}
+
+@keyframes bgcolor {
+	0% {background-color: #2e2f92;}
+	25% {background-color: #38afaa;}
+	50% {background-color: #5b59a7;}
+	75% {background-color: #f7b21c;}
+	100% {background-color: #e12527;}
+}
+
+#menu {
+	list-style: none;
+	float: right;
+	font-size: 25px;
+	margin-right: 15px;
+	margin-top: 90px;
+}
+
+#menu li {
+	display: inline-block;
+	margin-left: 38px;
+}
+#menu li:first-child {
+	margin-left: -38px;
+}
+#menu li a:hover {
+	color: red;
+	transition: .5s ease-in-out;
+}
+
+#menu.active {
+	margin-top: 120px;
+	max-height: 200px;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+.dropdown {
+	display: none;
+	float: right;
+	right: 460px;
+	position: absolute;
+	margin-left: 250px;
+	list-style: none;
+	font-size: 25px;
+	margin-top: 118px;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: solid;
+	padding: 2px;
+	z-index: 1;
+}
+.dropdown li a:hover {
+	color: red;
+	transition: .5s ease-in-out;
+}
+
+#filter {
+	float: right;
+	font-size: 25px;
+	position: absolute;
+	right: 5%;
+	margin-top: 200px;
+	padding: 0;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: black solid;
+	list-style: none;
+}
+#filter li a:hover {
+	color: red;
+	transition: .5s ease-in-out;
+}
+
+#up {
+	display: none;
+	position: fixed;
+	right: 13%;
+	bottom: 1%;
+	cursor: pointer;
+	animation: arrow 4s infinite alternate;
+	z-index: 1;
+}
+.up {
+	display: none;
+	position: fixed;
+	left: 2%;
+	bottom: 1%;
+	cursor: pointer;
+	animation: arrow 4s infinite alternate;
+	z-index: 1;
+}
+@keyframes arrow {
+	0% {background-color: #2e2f92;}
+	25% {background-color: #38afaa;}
+	50% {background-color: #5b59a7;}
+	75% {background-color: #f7b21c;}
+	100% {background-color: #e12527;}
+}

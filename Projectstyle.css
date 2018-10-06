@@ -1,0 +1,374 @@
+﻿body {
+	background-image: url("Images/Background.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+}
+h1 {
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 35px;
+	color: white;
+	
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+#container {
+	background: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	margin-bottom: 0;
+	width: 100%;
+	max-width: 1280px;
+	padding-top: 30px;
+	z-index: 2;
+}
+.container {
+	background: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	height: auto;
+	margin-left: 10px; 
+	width: 100%;
+	max-width: 1280px;
+	padding-top: 30px;
+	z-index: 2;
+}
+
+.slider {
+	max-width: 1024px;
+	width: 100%;
+	margin: 2em auto;	
+	border-style: solid;
+	animation: bordercolor 4s infinite alternate;
+	border-width: 3px;
+	border-radius: 5px;
+}
+@keyframes bordercolor {
+	0% {border-color: #2e2f92;}
+	25% {border-color: #38afaa;}
+	50% {border-color: #5b59a7;}
+	75% {border-color: #f7b21c;}
+	100% {border-color: #e12527;}
+}
+.slider-wrapper {
+	height: 683px;
+	position: relative;
+}
+.slide {
+	display: none;
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide:first-child {
+	display: block;
+}
+
+
+
+.slider-text h1 {
+	background-color: rgba(0, 0, 0, 0.9);
+	clear: both;
+	margin-top: 0;
+	
+}
+.slider-text p {
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 39px;
+	clear: both;
+	margin-top: 607px;
+	font-size: 20px;
+}
+
+.section {
+	max-width: 1024px;
+	width: 100%;
+	height: 100%;
+	margin: 2em auto;
+	margin-bottom: 0;
+	border-width: 0px 0px 5px 0px;
+	border-style: solid;
+	animation: bordercolor 4s infinite alternate;
+}
+
+#news {
+	height: 850px;
+}
+#characters {
+	height: 800px;
+}
+#teams {
+	height: 550px;
+	margin-bottom: 0;
+}
+
+.block {
+	display: inline-block;
+	margin-right: 29px;
+	vertical-align: top;
+	height: 400px;
+	border-style: solid;
+	margin-bottom: 20px;
+	position: relative;
+	width: 475px;
+	
+}
+.block-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 238px;
+	position: relative;
+	width: 475px;
+}
+.block-text {
+	margin-top: -19px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	height: 162px;
+}
+
+.char {
+	display: inline-block;
+	margin-right: 29px;
+	vertical-align: top;
+	height: 238px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 20px;
+	position: relative;
+	width: 475px;
+	background-color: black;
+}
+.char-link {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 238px;
+	position: relative;
+	width: 475px;
+	opacity: 0.5;
+}
+.char-link:hover {
+	opacity: 1;
+	transition: .1s ease-in-out;
+}
+
+.comics {
+	display: inline-block;
+	margin-right: 29px;
+	vertical-align: top;
+	height: auto;
+	border-style: solid;
+	margin-bottom: 20px;
+	position: relative;
+	width: 475px;
+	border-color: black;
+}
+.comics-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 713px;
+	position: relative;
+	width: 475px;	
+}
+.comics-text {
+	margin-top: -19px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	height: auto;
+	display: block;
+	overflow: hidden;
+}
+.section .important {
+	height: 861px;
+}
+.important .comics-text {
+	height: 147px;
+}
+.more {
+	display: block;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: red;
+}
+.less {
+	display: none;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: red;
+}
+
+.character {
+	display: inline-block;
+	margin-right: 29px;
+	vertical-align: top;
+	height: 818px;
+	margin-bottom: 20px;
+	position: relative;
+	width: 475px;
+	
+}
+.character-link {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 818px;
+	position: relative;
+	width: 475px;
+	opacity: 0;
+	transition: .2s ease-in-out;
+}
+.character-link:hover {
+	opacity: 1;
+	transition: .2s ease-in-out;
+}
+
+
+@media (max-width: 1577px) {
+	#filter {
+		right: 1%;
+	}
+}
+@media (max-width: 1524px) {
+	#up {
+		right: 9%;
+	}
+}
+@media (max-width: 1513px) {
+	#filter {
+		width: 100px;
+	}
+}
+@media (max-width: 1371px) {
+	#up {
+		right: 3%;
+	}
+}
+@media (max-width: 1243px) {
+	#filter {
+		width: 265px;
+		margin-top: 120px;
+	}
+	#filter li:first-child {
+		margin-left: 0;
+	}
+	#filter li {
+		display: inline-block;
+		border-right: solid red;
+		margin-left: -6px;
+		padding: 1px;
+	}
+	#filter li:last-child {
+		border: none;
+	}
+}
+@media (max-width: 1284px) {
+	#up {
+		right: 1%;
+	}
+}
+@media (max-width: 996px) {
+	.nav-toggle {
+		display: block;
+	}
+	#menu {
+		max-height: 0;
+		float: none;
+		position: absolute;
+		overflow: hidden;
+		right: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+	}
+	#menu li {
+		display: block;
+	}
+	#menu li:first-child {
+		margin-left: 38px;
+	}
+	.slider {
+		max-width: 512px;
+		width: 100%;
+		margin: 2em auto;		
+	}
+
+	.slider-wrapper {
+		height: 341px;
+		position: relative;
+	}
+	
+	.slider-text p {
+		margin-top: 268px;
+		height: 36px;
+		font-size: 15px;
+	}
+	.block {
+		display: block;
+		margin: auto;
+		padding: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		max-width: 475px;
+		vertical-align: middle;
+	}
+	#news {
+		height: 1700px;
+	}
+	#characters {
+		height: 1600px;
+	}
+	#teams {
+		height: 1050px;
+	}
+	#characters-all {
+		height: 2000px;
+	}
+	.block-image {
+		width: 100%;
+		max-width: 475px;
+	}
+	.char {
+		display: block;
+		margin: auto;
+		padding: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		max-width: 475px;
+		vertical-align: middle;
+	}
+	.char-link {
+		width: 100%;
+		max-width: 475px;
+	}
+	.comics {
+		display: block;
+		margin: auto;
+		padding: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		max-width: 475px;
+		vertical-align: middle;
+		
+	}
+	.comics-image {
+		width: 100%;
+		max-width: 475px;
+	}
+}
